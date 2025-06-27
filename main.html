@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel='stylesheet'href='style.css'>
+</head>
+<body>
+  <center>
+  <h1 id="title">Customer Feedback Survey</h1>
+  <p id="description">We value your feedback. Please fill out this short survey to help us improve our services.</p>
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    <br><br>
+    <!-- Email -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+    <br><br>
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" name="number" type="number" min="10" max="100" placeholder="Enter your age">
+    <br><br>
+    <!-- Dropdown -->
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown" name="source">
+      <option value="">Select an option</option>
+      <option value="internet">Internet</option>
+      <option value="friend">Friend</option>
+    </select>
+    <br><br>
+    <!-- Radio Buttons -->
+    <label>Would you recommend us?</label><br>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label>
+    <br><br>
+    <!-- Checkboxes -->
+    <label>Select your interests:</label><br>
+    <input type="checkbox" id="interest1" name="interest" value="news">
+    <label for="interest1">News</label>
+    <input type="checkbox" id="interest2" name="interest" value="updates">
+    <label for="interest2">Updates</label>
+    <input type="checkbox" id="interest3" name="interest" value="offers">
+    <label for="interest3">Special Offers</label>
+    <br><br>
+    <!-- Textarea -->
+    <label for="comments">Additional comments:</label><br>
+    <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+    <br><br>
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  </center>
+</body>
+</html>
